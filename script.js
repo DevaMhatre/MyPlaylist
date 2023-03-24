@@ -12,16 +12,16 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 
 let songs=[
-    {songName: "lastHope", filePath:"songs/1.mp3", coverPath:"covers/1.jpeg"},
-    {songName: "Beh Chala", filePath:"songs/2.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Ye Ratein Ye Mausam", filePath:"songs/1.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Kajra Mohabbat Wala", filePath:"songs/2.mp3", coverPath:"covers/1.jpeg"},
     {songName: "Jee Le Zaraa", filePath:"songs/3.mp3", coverPath:"covers/1.jpeg"},
     {songName: "Love Ki Ghanti", filePath:"songs/4.mp3", coverPath:"covers/1.jpeg"},
     {songName: "Main Tenu Samjhawan Ki", filePath:"songs/5.mp3", coverPath:"covers/1.jpeg"},
     {songName: "Monta Re", filePath:"songs/6.mp3", coverPath:"covers/1.jpeg"},
-    {songName: "Pani da BEST", filePath:"songs/7.mp3", coverPath:"covers/1.jpeg"},
-    {songName: "Pashmeena", filePath:"songs/8.mp3", coverPath:"covers/1.jpeg"},
-    {songName: "Tere bina", filePath:"songs/9.mp3", coverPath:"covers/1.jpeg"},
-    {songName: "Woh Ladki", filePath:"songs/10.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Perfect", filePath:"songs/7.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Ranjha- SherShaha", filePath:"songs/8.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Shauq", filePath:"songs/9.mp3", coverPath:"covers/1.jpeg"},
+    {songName: "Ehasan Tera Hoga Muzpar", filePath:"songs/10.mp3", coverPath:"covers/1.jpeg"},
 ]
 
 
