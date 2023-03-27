@@ -1,104 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify - Music is way to Express</title>
-        <link rel="stylesheet" href="style.css">
-        </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyPlayer - Music is way to Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <nav>
-        <ul >
-            <li class="brand"><img src="1.png" alt="Spotify"> MyPlayer</li>
+    <nav style="display: flex; position: relative;">
+        <span class="AA">
+            <div class="brand" style="display: flex;position: absolute;align-items: center; ">
+            <a href="https://www.youtube.com/@devamhatre" target="_blank" style="text-decoration: none; color: goldenrod;"> 
             <div>
-            <a href="https://www.youtube.com/@devamhatre" target="_blank">
-            <button>
-            <li>Home</li>
-            </a>
-            </button>
-            <a href="https://www.youtube.com/@devamhatre/about" target="_blank">
-            <button>
-            <li>About</li>
-            </a>
-            </button>
+                <img src="1.png" alt="Spotify" style="border-radius: 50%;"> 
             </div>
-        </ul>
+            </a>
+            <span><a href="https://www.youtube.com/@devamhatre" target="_blank" style="text-decoration: none; color: goldenrod;"> 
+                My Playlist</span>
+            </div>
+
+
+
+            <div class="HA">
+               
+                    <a href="https://www.youtube.com/@devamhatre" target="_blank">
+                        <button class="home" style="margin-top:5px; margin-left: 180px; ">
+                            Home
+                        </button>
+                    </a>
+                
+                    <a href="https://www.youtube.com/@devamhatre/about" target="_blank">
+                        <button class="about" style="margin-top:0px; margin-left: 10px;">
+                            About
+                        </button>    
+                    </a>
+                
+            </div>
+
+
+                <form id="form" class="style-scope ytd-expandable-tab-renderer" style="margin-left: 30px; margin-bottom: 0px;"
+                action="https://www.youtube.com//@devamhatre/search" target="_blank">
+                <tp-yt-paper-input id="input" autocomplete="off" max-length="100" name="query" no-label-float=""
+                    class="style-scope ytd-expandable-tab-renderer" tabindex="0"
+                    aria-disabled="false"><!--css-build:shady--><tp-yt-paper-input-container id="container"
+                        class="style-scope tp-yt-paper-input" style-target="host"><!--css-build:shady-->
+                        <div class="floated-label-placeholder style-scope tp-yt-paper-input-container"
+                            aria-hidden="true" hidden="">
+                            &nbsp;
+                        </div>
+
+                        <div class="input-wrapper style-scope tp-yt-paper-input-container">
+                            <span class="prefix style-scope tp-yt-paper-input-container"></span>
+
+                            <div id="labelAndInputContainer"
+                                class="input-content style-scope tp-yt-paper-input-container">
+                                <label aria-hidden="true" slot="label" class="style-scope tp-yt-paper-input"
+                                    for="input-3" id="paper-input-label-3">Search</label>
+                                <iron-input slot="input" class="input-element style-scope tp-yt-paper-input"
+                                    id="input-3"><!--css-build:shady-->
+
+
+                                    <input class="style-scope tp-yt-paper-input" autocomplete="off"
+                                        placeholder="" autocapitalize="none" autocorrect="off"
+                                        aria-describedby="" aria-labelledby="paper-input-label-3" name="query">
+
+                                </iron-input>
+                            </div>
+
+                            <span class="suffix style-scope tp-yt-paper-input-container"></span>
+                        </div>
+
+                        <div class="underline style-scope tp-yt-paper-input-container">
+                            <div class="unfocused-line style-scope tp-yt-paper-input-container"></div>
+                            <div class="focused-line style-scope tp-yt-paper-input-container"></div>
+                        </div>
+
+                        <div class="add-on-content style-scope tp-yt-paper-input-container">
+
+                        </div>
+                    </tp-yt-paper-input-container>
+                </tp-yt-paper-input>
+            </form>
+
+            
+
+
+
+           
+        </span>
     </nav>
 
-   <div class="container">
+    <div class="container" style="display: flex; position: relative;">
         <div class="songList">
-            <h1>MyPlayer - Music is way to Express</h1>
+            <h1> <b> <span style="color: rgb(226, 170, 101); border: 1px black;   text-shadow: 5px 5px 5px black; 
+                ">MyPlayer </b></span> <br> Music is a way to Express </h1>
             <div class="songItemContainer">
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:31 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:31 <i id="0"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">01:59 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">01:59 <i id="1"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:30 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:30 <i id="2"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:38 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:38 <i id="3"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">02:52 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">02:52 <i id="4"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:38 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:38 <i id="5"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">04:15 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">04:15 <i id="6"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">01:08 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">01:08 <i id="7"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:57 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:57 <i id="8"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">03:56<i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+                    <span class="songlistplay"><span class="timestamp">03:56<i id="9"
+                                class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
             </div>
         </div>
         <div class="songBanner"></div>
+
+
+
+        <div class="YouTube">
+            <iframe width="300px" height="200px" style=" opacity: 100%; " class="YT"
+                src="https://www.youtube.com/embed/videoseries?list=PLKCQTVibB2MDpPsl-5c_fYyB3qWEPyZcr&rel=0"
+                title="YouTube video player" frameborder="50"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+
     </div>
-    
-    
+
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
             <!-- fontawesome icons -->
-            <i class="fas fa-3x fa-step-backward" id="previous"></i>
-            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
-            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay" style="color: white;"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
         </div>
         <div class="songInfo">
-            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Last Hope</span>
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Ye Ratei Ye Mausam</span>
         </div>
     </div>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/747adcee27.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
